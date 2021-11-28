@@ -1,0 +1,158 @@
+@media screen and (min-width: 320px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 260px 100px auto 60px 100px
+    }
+
+    .logo {
+        position: relative;
+    }
+
+    h2, h4 {
+        color: white;
+    }
+
+    .logo > h2 {
+        padding-top: 10px;
+        margin: 0 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+    }
+
+    .icon {
+        position: relative;
+    }
+
+    .icon > img {
+        cursor: pointer;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+    }
+
+    .avatar {
+        grid-area: 1 / 4 / 2 / 5;
+        position: relative;
+    }
+
+
+    .avatar > img {
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .name {
+        grid-area: 1 / 5 / 2 / 6;
+        position: relative;
+    }
+
+    .name > h4 {
+        padding-top: 20px;
+        margin: auto 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+
+    }
+
+    .acc {
+        position: absolute;
+        top: 50px;
+        left: calc(100% - 240px);
+        width: 240px;
+        height: 240px;
+        border-radius: 6px;
+        background-color: #FFFFFF;
+    }
+}
+@media screen and (max-width: 320px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: auto 100px
+    }
+
+    .logo {
+        position: relative;
+    }
+
+    h2, h4 {
+        color: white;
+    }
+
+    .logo > h2 {
+        padding-top: 10px;
+        margin: 0 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+    }
+
+    .icon {
+        position: relative;
+    }
+
+    .icon > img {
+        cursor: pointer;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+    }
+
+    .avatar {
+        display: none;
+    }
+
+
+    .avatar > img {
+        display: none;
+    }
+
+    .name {
+        display: none;
+    }
+
+    .name > h4 {
+        display: none;
+    }
+
+    .acc {
+        position: absolute;
+        top: 50px;
+        left: calc(100% - 240px);
+        width: 240px;
+        height: 240px;
+        border-radius: 6px;
+        background-color: #FFFFFF;
+    }
+}
