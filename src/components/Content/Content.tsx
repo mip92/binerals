@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './Content.module.css'
-import Condd from "./Condd";
 
 const Content = () => {
     return (

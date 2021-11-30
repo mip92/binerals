@@ -1,10 +1,10 @@
 import React, {FC} from 'react';
 import {observer} from "mobx-react-lite";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Main from "../Main/Main";
 import Login from "../Login/Login";
 import {ThemeProvider} from "@material-ui/core";
 import {createTheme} from "@material-ui/core";
+import Main from "../Main/Main";
 
 export const theme = createTheme({
     palette: {

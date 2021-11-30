@@ -3,8 +3,8 @@
     grid-template-rows: 60px auto;
     background-color: #FFFFFF;
     box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+/*    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;*/
     width: auto;
     height: calc(100% - 20px);
     margin: 10px;
