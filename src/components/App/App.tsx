@@ -1,10 +1,9 @@
 import React, {FC} from 'react';
 import {observer} from "mobx-react-lite";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Login from "../Login/Login";
+import {BrowserRouter} from "react-router-dom";
 import {ThemeProvider} from "@material-ui/core";
 import {createTheme} from "@material-ui/core";
-import Main from "../Main/Main";
+import MyRoutes from "../MyRoutes/MyRoutes";
 
 export const theme = createTheme({
     palette: {
@@ -21,14 +20,11 @@ export const theme = createTheme({
 
 const App: FC = observer(() => {
         return (
-                <ThemeProvider theme={theme}>
-                    <BrowserRouter>
-                        <Routes>
-                            <Route path='/' element={<Main/>}/>
-                            <Route path='/login' element={<Login/>}/>
-                        </Routes>
-                    </BrowserRouter>
-                </ThemeProvider>
+            <ThemeProvider theme={theme}>
+                <BrowserRouter>
+                    <MyRoutes/>
+                </BrowserRouter>
+            </ThemeProvider>
         );
     }
 )

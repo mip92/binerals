@@ -1,3 +1,29 @@
+.home:hover > img, .vector:hover > img, .gear:hover > img, .door:hover > img{
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1)
+}
+
+.home > img, .vector > img, .gear > img, .door > img, .home > div, .vector > div, .gear > div, .door > div, .avatar>img, .avatar>div {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.home:hover, .vector:hover, .gear:hover, .door:hover, .avatar:hover {
+    background-color: #89B0AE;
+}
 @media screen and (min-width: 320px) {
     .main {
         display: grid;
@@ -37,21 +63,6 @@
         grid-area: 6 / 1 / 7 / 2;
     }
 
-    .home:hover, .vector:hover, .gear:hover .door:hover {
-        background-color: #89B0AE;
-    }
-
-    .home > img, .vector > img, .gear > img, .door > img {
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 20px;
-        height: 20px;
-
-    }
 }
 @media screen and (max-width: 320px) {
     .main {

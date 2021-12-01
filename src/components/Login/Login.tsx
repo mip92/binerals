@@ -17,9 +17,9 @@ const Login = () => {
                 email: email.value,
                 password: password.value
             }).then(response => {
-                    User.changeName(response.data.email)
-                    User.changePicture(response.data.image)
-                    localStorage.setItem('email', response.data.email)
+                    User.changeName(response.data.user.email)
+                    User.changePicture(`http://localhost:5000/${response.data.user.image}`)
+                    localStorage.setItem('email', response.data.user.email)
                     navigate('/')
                 }
             )
