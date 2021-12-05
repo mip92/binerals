@@ -1,0 +1,177 @@
+.wrapper{
+    display: flex;
+}
+h2, h4 {
+    color: white;
+    font-weight: bold;
+}
+.logo{
+    width:260px
+}
+.icon{
+    position: relative;
+    width:60px
+}
+.logo > h2 {
+    font-weight: 1000;
+    padding-top: 15px;
+    margin: 0 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+}
+.icon > img {
+    cursor: pointer;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+}
+.avatar {
+    margin-left: auto;
+    position: relative;
+    width:60px
+}
+.avatar > img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.name {
+    flex-basis: max-content;
+    min-width: 100px;
+    max-width: 500px;
+    grid-area: 1 / 5 / 2 / 6;
+    position: relative;
+    display: flex;
+}
+
+.name > h4 {
+    overflow: hidden;
+    padding-top: 20px;
+    margin: auto 0;
+    position: absolute;
+    top: 0;
+    text-align: right;
+    width: auto;
+    height: 40px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.acc {
+    position: absolute;
+    top: 50px;
+    left: calc(100% - 240px);
+    width: 240px;
+    height: 240px;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+}
+
+.arrow {
+    grid-area: 1 / 6 / 2 / 7;
+    position: relative;
+    margin-right: 50px;
+}
+
+.arrow > img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 5px;
+    height: 5px;
+}
+@media screen and (max-width: 320px) {
+    .arrow{
+        display: none;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: auto 100px
+    }
+
+    .logo {
+        position: relative;
+    }
+
+    h2, h4 {
+        color: white;
+
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .logo > h2 {
+        font-family: 'Roboto', sans-serif;
+        padding-top: 15px;
+        margin: 0 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+    }
+
+    .icon {
+        position: relative;
+    }
+
+    .icon > img {
+        cursor: pointer;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+    }
+
+    .avatar {
+        display: none;
+    }
+
+
+    .avatar > img {
+        display: none;
+    }
+
+    .name {
+        display: none;
+    }
+
+    .name > h4 {
+        display: none;
+    }
+
+    .acc {
+        position: absolute;
+        top: 50px;
+        left: calc(100% - 240px);
+        width: 240px;
+        height: 240px;
+        border-radius: 6px;
+        background-color: #FFFFFF;
+    }
+
+}

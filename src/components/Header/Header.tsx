@@ -1,5 +1,5 @@
 import React, {FC, useRef} from 'react';
-import s from './Header.module.css';
+import s from './Header222222.module.css';
 import icon from '../../images/icons/img.png'
 import close from '../../images/icons/img_1.png'
 import poligon from '../../images/img/Polygon 1.png'
@@ -42,9 +42,10 @@ const Header: FC = observer(() => {
                      onMouseEnter={(e) => enterDivListener(e)}>
                     <img src={User.picture} alt='avatar'/>
                 </div>
-                <div className={s.name}>
+
+                <span className={s.name}>
                     <h4>{User.name}</h4>
-                </div>
+                </span>
                 <div className={s.acc} ref={accordionReference}
                      onMouseLeave={(e) => leaveDivListener(e)}
                      onMouseEnter={(e) => enterDivListener(e)}
